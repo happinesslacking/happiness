@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Happiness Lacking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Happiness Lacking</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter your username">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+
+            <div id="errorMessage" class="error-message"></div>
+
+            <!-- Music Control Section -->
+            <div id="musicControl" class="music-control">
+                <h3>🎵 Music</h3>
+                <div class="music-player">
+                    <audio id="bgAudio" autoplay muted loop preload="auto">
+                        <source src="assets/music.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="volume-container">
+                        <label for="volumeSlider">Volume:</label>
+                        <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="70">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="music.js"></script>
+</body>
+
+</html>
